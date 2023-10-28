@@ -1,0 +1,95 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Karla', sans-serif;
+}
+main{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width:600px;
+  height: 500px;
+  margin: 100px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 5px 5px 5px hsl(200, 7%, 67%), -5px 5px 5px hsl(200, 7%, 67%);
+}
+.community{
+  grid-column: 1/3;
+  padding: 30px;
+}
+h1{
+  color: hsl(179, 62%, 43%);
+  font-size: 28px;
+}
+.community h2{
+  color: hsl(71, 73%, 54%);
+  margin: 15px 0;
+  font-size: 20px;
+}
+.community p{
+  color: hsl(218, 22%, 67%);
+  font-size: 16px;
+}
+.subs{
+  background-color: hsl(179, 62%, 43%);
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+.subs h2, .why h2{
+  color: hsl(204, 43%, 93%);
+  font-size: 20px;
+}
+.subs h3{
+  font-size: 32px;
+  color: hsl(204, 43%, 93%);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+span{
+  font-size: 14px;
+  color: hsl(218, 73%, 87%);
+  font-weight: 400;
+}
+.subs p{
+  color: hsl(204, 43%, 93%);
+}
+button{
+  background-color: hsl(71, 73%, 54%);
+  border: 0;
+  align-self: stretch;
+  padding: 15px;
+  border-radius: 5px;
+  color: white;
+  margin-top: 20px;
+  box-shadow: 3px 3px 3px hsl(70, 13%, 37%);
+}
+.why{
+  background-color: hsl(179, 55%, 58%);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.why h2{
+  margin-bottom: 10px;
+}
+.why p{
+  color: hsl(204, 43%, 93%);
+  font-size: 15px;
+}
+
+
+@media screen and (max-width:600px) {
+  main{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+    margin: 10px auto;
+  }
+}
